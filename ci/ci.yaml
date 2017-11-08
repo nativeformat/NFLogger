@@ -1,0 +1,3 @@
+# NFLogger CI config
+'unit_tests':
+    - 'NFLoggerTest'

@@ -1,0 +1,5 @@
+brew "clang-format"
+brew "cmake"
+brew "ninja"
+brew "wget"
+brew "lcov"
