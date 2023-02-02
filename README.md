@@ -11,6 +11,8 @@ A C++ threadsafe logging framework with customisable messages and sinks.
 - [x] 💻 OS X 10.11+
 - [x] 🐧 Ubuntu Bionic 18.04+ (clang or gcc)
 
+Developed at Spotify 2019-2022, Discontinued and handed over to new maintainers January 2023
+
 ## Raison D'être :thought_balloon:
 When developing C++ projects, we often found we had a need for a customisable logging library that would fit all our uses. For example in some of our builds, we just want logs to be printed to standard out, sometimes we want certain log messages to post to backends with different quality of services (e.g. can the log be dropped if the backend is unreachable?), and sometimes we want a log to write directly to a disk in an encrypted format that only we can utilise. Sometimes these logs needed to be text, sometimes they needed to be JSON, and sometimes they needed to be protobuf. So we made this framework to be as generic as possible, allowing the user to define their own log types, log from anywhere in the app (whether its the audio thread or the main thread), define the severity of the log and have different sinks perform different actions according to the log being processed.
 
